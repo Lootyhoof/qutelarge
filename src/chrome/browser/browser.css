@@ -490,6 +490,10 @@ menuitem.bookmark-item {
   -moz-box-orient: vertical;
 }
 
+.toolbarbutton-1[type="menu"] {
+  -moz-box-orient: horizontal !important;
+}
+
 #navigator-toolbox[iconsize=small] > #nav-bar {
   padding-top: 1px;
   padding-bottom: 1px;
