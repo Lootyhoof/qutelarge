@@ -542,7 +542,7 @@ menuitem.bookmark-item {
 }
 
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
-#nav-bar .toolbarbutton-1:not(:-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #history-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button)) > .toolbarbutton-icon {
+#nav-bar .toolbarbutton-1:not(:-moz-any(#back-button, #forward-button, #reload-button, #stop-button, #home-button, #print-button, #downloads-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-out-button, #zoom-in-button, #sync-button, #feed-button, #alltabs-button, #tabview-button)) > .toolbarbutton-icon {
   margin: 1px;
 }
 
@@ -745,20 +745,29 @@ toolbar[mode="full"] .toolbarbutton-menubutton-button {
 
 /* history sidebar button */
 
-#history-button {
+#history-button,
+#history-menu-button {
   -moz-image-region: rect(0px 210px 30px 180px);
 }
-#history-button:not([disabled="true"]):not([checked="true"]):hover {
+#history-button:not([disabled="true"]):not([checked="true"]):hover,
+#history-menu-button:not([disabled="true"]):not([checked="true"]):hover {
   -moz-image-region: rect(30px 210px 60px 180px);
 }
-#history-button[disabled="true"] {
+#history-button[disabled="true"],
+#history-menu-button[disabled="true"] {
   -moz-image-region: rect(60px 210px 90px 180px);
 }
-#history-button[checked="true"] {
+#history-button[checked="true"],
+#history-menu-button[checked="true"] {
   -moz-image-region: rect(30px 210px 60px 180px);
 }
-#history-button:not([disabled="true"]):not([checked="true"]):hover:active {
+#history-button:not([disabled="true"]):not([checked="true"]):hover:active,
+#history-menu-button:not([disabled="true"]):not([checked="true"]):hover:active {
   -moz-image-region: rect(30px 210px 60px 180px);
+}
+
+#history-menu-button.toolbarbutton-1 {
+  -moz-box-orient: horizontal;
 }
 
 /* bookmark sidebar & menu buttons */
@@ -766,9 +775,6 @@ toolbar[mode="full"] .toolbarbutton-menubutton-button {
 #bookmarks-button,
 #bookmarks-menu-button {
   -moz-image-region: rect(0px 240px 30px 210px);
-}
-#bookmarks-menu-button.toolbarbutton-1 {
-  -moz-box-orient: horizontal;
 }
 #bookmarks-button:not([disabled="true"]):not([checked="true"]):hover {
   -moz-image-region: rect(30px 240px 60px 210px);
@@ -1116,39 +1122,53 @@ toolbar[iconsize="small"] #status4evar-download-button:-moz-lwtheme-brighttext #
   height:20px;
 }
 
-/* history sidebar button */
+/* history sidebar & menu buttons */
 
-toolbar[iconsize="small"] #history-button {
+toolbar[iconsize="small"] #history-button,
+toolbar[iconsize="small"] #history-menu-button {
   -moz-image-region: rect(0px 140px 20px 120px);
 }
-toolbar[iconsize="small"] #history-button:not([disabled="true"]):not([checked="true"]):hover {
+toolbar[iconsize="small"] #history-button:not([disabled="true"]):not([checked="true"]):hover,
+toolbar[iconsize="small"] #history-menu-button:not([disabled="true"]):not([checked="true"]):hover {
   -moz-image-region: rect(20px 140px 40px 120px); 
 }
-toolbar[iconsize="small"] #history-button[disabled="true"] {
+toolbar[iconsize="small"] #history-button[disabled="true"],
+toolbar[iconsize="small"] #history-menu-button[disabled="true"] {
   -moz-image-region: rect(40px 140px 60px 120px);
 }
-toolbar[iconsize="small"] #history-button[checked="true"] {
+toolbar[iconsize="small"] #history-button[checked="true"],
+toolbar[iconsize="small"] #history-menu-button[checked="true"] {
   -moz-image-region: rect(20px 140px 40px 120px); 
 }
-toolbar[iconsize="small"] #history-button:not([disabled="true"]):not([checked="true"]):hover:active {
+toolbar[iconsize="small"] #history-button:not([disabled="true"]):not([checked="true"]):hover:active,
+toolbar[iconsize="small"] #history-menu-button:not([disabled="true"]):not([checked="true"]):hover:active {
   -moz-image-region: rect(20px 140px 40px 120px); 
 }
 
-/* bookmark sidebar button */
+toolbar[iconsize="small"] #history-menu-button.toolbarbutton-1 {
+  -moz-box-orient: horizontal;
+}
 
-toolbar[iconsize="small"] #bookmarks-button, toolbar[iconsize="small"] #bookmarks-menu-button {
+/* bookmark sidebar & menu buttons */
+
+toolbar[iconsize="small"] #bookmarks-button, 
+toolbar[iconsize="small"] #bookmarks-menu-button {
   -moz-image-region: rect(0px 160px 20px 140px);
 }
-toolbar[iconsize="small"] #bookmarks-button:not([disabled="true"]):not([checked="true"]):hover {
+toolbar[iconsize="small"] #bookmarks-button:not([disabled="true"]):not([checked="true"]):hover,
+toolbar[iconsize="small"] #bookmarks-menu-button:not([disabled="true"]):not([checked="true"]):hover {
   -moz-image-region: rect(20px 160px 40px 140px)
 }
-toolbar[iconsize="small"] #bookmarks-button[disabled="true"] {
+toolbar[iconsize="small"] #bookmarks-button[disabled="true"],
+toolbar[iconsize="small"] #bookmarks-menu-button[disabled="true"] {
   -moz-image-region: rect(40px 160px 60px 140px);
 }
-toolbar[iconsize="small"] #bookmarks-button[checked="true"] {
+toolbar[iconsize="small"] #bookmarks-button[checked="true"],
+toolbar[iconsize="small"] #bookmarks-menu-button[checked="true"] {
   -moz-image-region: rect(20px 160px 40px 140px)
 }
-toolbar[iconsize="small"] #bookmarks-button:not([disabled="true"]):not([checked="true"]):hover:active {
+toolbar[iconsize="small"] #bookmarks-button:not([disabled="true"]):not([checked="true"]):hover:active,
+toolbar[iconsize="small"] #bookmarks-menu-button:not([disabled="true"]):not([checked="true"]):hover:active {
   -moz-image-region: rect(20px 160px 40px 140px)
 }
 
