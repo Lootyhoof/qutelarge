@@ -692,7 +692,7 @@ toolbar[mode="full"] .toolbarbutton-menubutton-button {
   list-style-image: url(chrome://browser/skin/tabview/tabview.png);
 }
 
-#tabview-button:-moz-lwtheme-brighttext {
+toolbar[brighttext] #tabview-button {
   list-style-image: url(chrome://browser/skin/tabview/tabview-inverted.png);
 }
 
