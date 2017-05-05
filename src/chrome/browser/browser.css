@@ -483,7 +483,7 @@ menuitem.bookmark-item {
 /* ::::: primary toolbar buttons ::::: */
 
 .toolbarbutton-1 {
-  list-style-image: url("chrome://browser/skin/Toolbar.png");
+  list-style-image: url("chrome://browser/skin/Toolbar-large.png");
 }
 
 .toolbarbutton-1:not([type="menu-button"]) {
@@ -754,7 +754,7 @@ toolbar[brighttext] #tabview-button {
 /* download status button */
 #status4evar-download-button #status4evar-download-icon,
 #status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"),
+  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"),
                               0, 180, 30, 150) !important;
   width:30px;
   height:30px;
@@ -807,7 +807,7 @@ toolbar[brighttext] #tabview-button {
 }
 
 #bookmarks-menu-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar.png") !important;
+  list-style-image: url("chrome://browser/skin/Toolbar-large.png") !important;
 }
 
 #bookmarks-menu-button.toolbarbutton-1 {
@@ -964,49 +964,32 @@ toolbar:not([iconsize="small"]) #new-window-button > .toolbarbutton-icon {
 /* feed button */
 
 #feed-button {
-  list-style-image: url("chrome://browser/skin/SmallToolbar.png");
-  -moz-image-region: rect(0, 432px, 24px, 408px);
+  -moz-image-region: rect(0px 540px 30px 510px);
 }
 #feed-button:not([disabled="true"]):hover {
-  -moz-image-region: rect(24px 432px 48px 408px);
+  -moz-image-region: rect(30px 540px 60px 510px);
 }
 #feed-button[disabled="true"] {
-  -moz-image-region: rect(48px 432px 72px 408px);
+  -moz-image-region: rect(60px 540px 90px 510px);
 }
 #feed-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(96px 432px 120px 408px);
+  -moz-image-region: rect(30px 540px 60px 510px);
 }
 
 /* sync button */
 
 #sync-button {
-  -moz-image-region: rect(0px 540px 30px 510px);
+  -moz-image-region: rect(0px 570px 30px 540px);
 }
 #sync-button:not([disabled="true"]):hover {
-  -moz-image-region: rect(30px 540px 60px 510px);
+  -moz-image-region: rect(30px 570px 60px 540px);
 }
 #sync-button[disabled="true"] {
-  -moz-image-region: rect(60px 540px 90px 510px);
+  -moz-image-region: rect(60px 570px 90px 540px);
 }
 #sync-button[status="active"] {
   list-style-image: url("chrome://browser/skin/sync-throbber.png");
   -moz-image-region: rect(0, 18px, 18px, 0);
-}
-
-/* webrtc-status button */
-
-#webrtc-status-button {
-  list-style-image: url("chrome://browser/skin/SmallToolbar.png");
-  -moz-image-region: rect(0, 480px, 24px, 456px);
-}
-#webrtc-status-button:not([disabled="true"]):hover {
-  -moz-image-region: rect(24px 480px 48px 456px);
-}
-#webrtc-status-button[disabled="true"] {
-  -moz-image-region: rect(48px 480px 72px 456px);
-}
-#webrtc-status-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(96px 480px 120px 456px);
 }
 
 /* ::::: 16px primary toolbar buttons ::::: */
@@ -1323,49 +1306,32 @@ toolbar[iconsize="small"] #zoom-in-button:not([disabled="true"]):hover:active {
 /* feed button */
 
 toolbar[iconsize="small"] #feed-button {
-  list-style-image: url("chrome://browser/skin/SmallToolbar-small.png");
-  -moz-image-region: rect(0, 288px, 16px, 272px);
+  -moz-image-region: rect(0px 360px 20px 340px);
 }
 toolbar[iconsize="small"] #feed-button:not([disabled="true"]):hover {
-  -moz-image-region: rect(16px 288px 32px 272px);
+  -moz-image-region: rect(20px 360px 40px 340px);
 }
 toolbar[iconsize="small"] #feed-button[disabled="true"] {
-  -moz-image-region: rect(32px 288px 48px 272px);
+  -moz-image-region: rect(40px 360px 60px 340px);
 }
 toolbar[iconsize="small"] #feed-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(64px 288px 80px 272px);
+  -moz-image-region: rect(20px 360px 40px 340px);
 }
 
 /* sync button */
 
 toolbar[iconsize="small"] #sync-button {
-  -moz-image-region: rect(0px 360px 20px 340px);
+  -moz-image-region: rect(0px 380px 20px 360px);
 }
 toolbar[iconsize="small"] #sync-button:not([disabled="true"]):hover {
-  -moz-image-region: rect(20px 360px 40px 340px);
+  -moz-image-region: rect(20px 380px 40px 360px);
 }
 toolbar[iconsize="small"] #sync-button[disabled="true"] {
-  -moz-image-region: rect(40px 360px 60px 340px);
+  -moz-image-region: rect(40px 380px 60px 360px);
 }
 toolbar[iconsize="small"] #sync-button[status="active"] {
   list-style-image: url("chrome://browser/skin/sync-16-throbber.png");
   -moz-image-region: rect(0px 16px 16px 0px);
-}
-
-/* webrtc-status button */
-
-toolbar[iconsize="small"] #webrtc-status-button {
-  list-style-image: url("chrome://browser/skin/SmallToolbar-small.png");
-  -moz-image-region: rect(0, 320px, 16px, 304px);
-}
-toolbar[iconsize="small"] #webrtc-status-button:not([disabled="true"]):hover {
-  -moz-image-region: rect(16px, 320px, 32px, 304px);
-}
-toolbar[iconsize="small"] #webrtc-status-button[disabled="true"] {
-  -moz-image-region: rect(32px 320px 48px 304px);
-}
-toolbar[iconsize="small"] #webrtc-status-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(64px 320px 80px 304px);
 }
 
 /* ::::: fullscreen window controls ::::: */
