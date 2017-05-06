@@ -508,6 +508,7 @@ menuitem.bookmark-item {
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
 #nav-bar .toolbarbutton-1 {
   -moz-appearance: none;
+  border: none;
   padding: 2px 5px 0 5px;
   color: black;
   text-shadow: 0 0 2px white;
