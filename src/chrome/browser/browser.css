@@ -793,16 +793,24 @@ toolbar[brighttext] #tabview-button {
 #bookmarks-menu-button {
   -moz-image-region: rect(0px 240px 30px 210px);
 }
-#bookmarks-button:not([disabled="true"]):not([checked="true"]):hover {
+
+#bookmarks-button:not([disabled="true"]):not([checked="true"]):hover,
+#bookmarks-menu-button:not([disabled="true"]):not([checked="true"]):hover {
   -moz-image-region: rect(30px 240px 60px 210px);
 }
-#bookmarks-button[disabled="true"] {
+
+#bookmarks-button[disabled="true"],
+#bookmarks-menu-button[disabled="true"] {
   -moz-image-region: rect(60px 240px 90px 210px);
 }
-#bookmarks-button[checked="true"] {
+
+#bookmarks-button[checked="true"],
+#bookmarks-menu-button[checked="true"] {
   -moz-image-region: rect(30px 240px 60px 210px);
 }
-#bookmarks-button:not([disabled="true"]):not([checked="true"]):hover:active {
+
+#bookmarks-button:not([disabled="true"]):not([checked="true"]):hover:active,
+#bookmarks-menu-button:not([disabled="true"]):not([checked="true"]):hover:active {
   -moz-image-region: rect(30px 240px 60px 210px);
 }
 
