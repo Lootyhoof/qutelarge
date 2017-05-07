@@ -16,6 +16,7 @@
 - improve appmenu appearance on Linux
 - fix hover/click states for bookmarks menu button
 - improve sync button icon appearance
+- fix small downloads button icon mapping
 
 ### 1.5.0
 - support PM27's devtools
