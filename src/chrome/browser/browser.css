@@ -713,15 +713,6 @@ toolbar[brighttext] #tabview-button {
   -moz-image-region: rect(30px 180px 60px 150px);
 }
 
-/* download status button */
-#status4evar-download-button #status4evar-download-icon,
-#status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"),
-                              0, 180, 30, 150) !important;
-  width:30px;
-  height:30px;
-}
-
 /* history sidebar button */
 
 #history-button,
@@ -1080,16 +1071,7 @@ toolbar[iconsize="small"] #downloads-button[disabled="true"] {
   -moz-image-region: rect(40px 120px 80px 100px);
 }
 toolbar[iconsize="small"] #downloads-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(80px 120px 100px 100px);
-}
-
-/* download status button */
-toolbar[iconsize="small"] #status4evar-download-button #status4evar-download-icon,
-toolbar[iconsize="small"] #status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
-                              0, 120, 20, 100) !important;
-  width:20px;
-  height:20px;
+  -moz-image-region: rect(20px 120px 40px 100px);
 }
 
 /* history sidebar & menu buttons */
