@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{a3056aed-a93d-4c22-b98e-98e62085837f}</em:id>
-    <em:version>2.0.1</em:version>
+    <em:version>2.1.0</em:version>
     <em:name>Qute Large</em:name>
     <em:description>Large version of the Qute theme by Arvid Axelsson for Pale Moon. Based on "Qute 3++" using icons from "Qute Classic".</em:description>
     <em:creator>Lootyhoof</em:creator>
@@ -20,13 +20,12 @@
     <em:contributor>David Quintana</em:contributor>
     <em:contributor>Arvid Axelsson - author of the Qute icons and the original theme</em:contributor>
     <em:contributor>Graciliano (Win10 caption buttons)</em:contributor>
-    <em:contributor>magicp</em:contributor>
 
     <em:targetApplication>
       <Description>
         <!-- Pale Moon -->
         <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
-        <em:minVersion>27.0.0b3</em:minVersion>
+        <em:minVersion>27.5.0</em:minVersion>
         <em:maxVersion>27.*</em:maxVersion>
       </Description>
     </em:targetApplication>
