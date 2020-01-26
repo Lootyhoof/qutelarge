@@ -1,5 +1,5 @@
 # Qute Large
-![Preview](http://i66.tinypic.com/2vsks5l.png)
+![Preview](https://i.imgur.com/ETDcRug.png)
 
 Large version of the Qute theme by Arvid Axelsson for Pale Moon. Based on "Qute 3++" with icons from "Qute Classic".
 
