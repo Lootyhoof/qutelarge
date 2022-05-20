@@ -9,14 +9,13 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{a3056aed-a93d-4c22-b98e-98e62085837f}</em:id>
-    <em:version>2.8.0</em:version>
+    <em:version>2.9.0</em:version>
     <em:name>Qute Large</em:name>
     <em:description>Large version of the Qute theme by Arvid Axelsson for Pale Moon. Based on "Qute 3++" using icons from "Qute Classic".</em:description>
     <em:creator>Lootyhoof</em:creator>
     <em:type>4</em:type>
     <em:internalName>qutelarge</em:internalName>
     <em:skinnable>true</em:skinnable>
-    <em:updateURL>https://raw.githubusercontent.com/Lootyhoof/qutelarge/master/update.xml</em:updateURL>
 
     <em:contributor>David Quintana</em:contributor>
     <em:contributor>Arvid Axelsson - author of the Qute icons and the original theme</em:contributor>
